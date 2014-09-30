@@ -16,7 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect firstFrame = CGRectMake(40, 40, 200, 200);
+    UIView* firstView = [[UIView alloc] initWithFrame:firstFrame];
+    firstView.backgroundColor = [UIColor blueColor];
+    
+    [self.view addSubview:firstView];
+    
+    UIView* secondView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+
+    
+    secondView.backgroundColor = [UIColor redColor];
+    [firstView addSubview:secondView];
+    
+    
+    NSLog(@"ahoj bi-ios");
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
